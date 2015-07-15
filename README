@@ -1,0 +1,14 @@
+
+This script computes the six helical parameters for base stacking of ssDNA.  It currently only does so for purines but can be easily adapted for other standard or nonstandard bases.   The output is currently printed to two files: dist.dat and ang.dat.  dist.dat contains the three distance parameters for all possible pairs of bases for every step in the trajectory.  Similarly ang.dat contains the three angle parameters for all possible pairs of bases for every step in the trajectory.
+
+USAGE: ss_helical_params.py [config file]
+
+CONFIGURATION FILE FORMAT:
+
+topFile = [topology file name]
+trajFile = [trajectory file name]
+
+NOTES:
+This python script requires MDAnalysis and numpy libraries.
+the topology file can be a pdb, psf or other such topology containing file
+the trajectory file can be any trajectory format that MDAnalysis reads.
